@@ -8,7 +8,7 @@ export default function NavBar({ menuOpen, setMenuOpen }) {
                 <a href="#intro" className="logo">Rossco</a>
                 <div className="item-container">
                     <Person className="icon" />
-                    <span>+1 780 857 4897</span>
+                    <span>+1 250 857 4897</span>
                 </div>
                 <div className="item-container">
                     <Mail className="icon" />
