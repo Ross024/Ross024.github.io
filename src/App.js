@@ -1,25 +1,32 @@
-import Intro from "./components/Intro";
 import NavBar from "./components/NavBar";
-import Portfolio from "./components/Portfolio";
-import Works from "./components/Works";
-import Contact from "./components/Contact";
 import Menu from "./components/Menu";
+import Home from "./pages/Home";
+import BankingApp from "./pages/BankingApp";
+import Calculator from "./pages/Calculator";
+import CsharpConsole from "./pages/CsharpConsole";
+import NewsApp from "./pages/NewsApp";
 import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className="App">
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="sections">
-        <Intro/>
-        <Portfolio/>
-        <Works/>
-        <Contact/>
+    <Router>
+      <div className="App">
+        <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/1" element={<NewsApp />} />
+            <Route path="/2" element={<BankingApp />} />
+            <Route path="/3" element={<CsharpConsole />} />
+            <Route path="/4" element={<Calculator />} />
+          </Routes>
+        </main>
       </div>
-    </div>
+    </Router>
   );
 }
 

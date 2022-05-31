@@ -10,10 +10,11 @@
         scroll-snap-type: y mandatory;
         scrollbar-width: none; //for firefox
 
-        // Think I want to display scrollbar on desktop width
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        @include mobile {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }        
 
         > * {
             width: 100vw;

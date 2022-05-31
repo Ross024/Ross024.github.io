@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import PortfolioList from './PortfolioList';
 import { featuredPortfolio, webPortfolio, otherPortfolio } from '../data';
+import { Link } from 'react-router-dom';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -53,10 +54,12 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-          <img 
-            src={d.img} 
-            alt="" 
-          />
+            <Link to={`/${d.id}`}>
+              <img 
+                src={d.img} 
+                alt="" 
+              />
+            </Link>
           <h3>{d.title}</h3>
         </div>
         ))} 

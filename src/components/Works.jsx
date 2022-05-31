@@ -43,7 +43,7 @@ export default function Works() {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  {/* <span>Projects</span> */}
                 </div>
               </div>
               <div className="right">
@@ -53,8 +53,8 @@ export default function Works() {
           </div>
         ))}
       </div>
-      <img src="assets/arrow.png" className="arrow left" alt="" onClick={() => handleClick("left")}/>
-      <img src="assets/arrow.png" className="arrow right" alt="" onClick={() => handleClick("right")}/>
+      <img src="assets/arrow.png" className="arrow left" alt="Back" onClick={() => handleClick("left")}/>
+      <img src="assets/arrow.png" className="arrow right" alt="Forward" onClick={() => handleClick("right")}/>
     </div>
   )
 }
