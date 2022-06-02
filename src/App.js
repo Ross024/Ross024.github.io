@@ -6,7 +6,7 @@ import Calculator from "./pages/Calculator";
 import CsharpConsole from "./pages/CsharpConsole";
 import NewsApp from "./pages/NewsApp";
 import Bungle from "./pages/Bungle";
-import Vulcan from "./pages/Vulcan  ";
+import Vulcan from "./pages/Vulcan";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
