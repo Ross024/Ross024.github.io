@@ -1,6 +1,7 @@
 .contact {
     background-color: white;
     display: flex;
+    height: 100vh !important;
 
     @include mobile {
         flex-direction: column;

@@ -5,6 +5,8 @@ import BankingApp from "./pages/BankingApp";
 import Calculator from "./pages/Calculator";
 import CsharpConsole from "./pages/CsharpConsole";
 import NewsApp from "./pages/NewsApp";
+import Bungle from "./pages/Bungle";
+import Vulcan from "./pages/Vulcan";
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/2" element={<BankingApp />} />
             <Route path="/3" element={<CsharpConsole />} />
             <Route path="/4" element={<Calculator />} />
+            <Route path="/5" element={<Bungle />} />
+            <Route path="/6" element={<Vulcan />} />
           </Routes>
         </main>
       </div>

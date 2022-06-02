@@ -4,6 +4,13 @@ export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const data = [
     {
+      id: 5,
+      icon: "assets/aws.png",
+      title: "Bungle Social Media",
+      desc: "A social media app developed using AWS Amplify, DynamoDB, and React",
+      img: "assets/bungle-pic.png",
+    },
+    {
       id: 1,
       icon: "assets/cbc.png",
       title: "CBC-ish News App",

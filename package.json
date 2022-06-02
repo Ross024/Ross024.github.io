@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Ross024.github.io",
+  "homepage": "https://ross024.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.5.0",

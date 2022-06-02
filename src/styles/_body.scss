@@ -1,9 +1,15 @@
 .App {
     height: 100vh;
+    // height: 100%;
+
+    main {
+        overflow-y: hidden;
+    }
 
     .sections {
         width: 100%;
-        height: calc(100vh - 70px);
+        // height: calc(100vh - 70px); old styling, produced white bar at bottom of page
+        height: 100vh;
         position: relative;
         top: 70px;
         scroll-behavior: smooth;

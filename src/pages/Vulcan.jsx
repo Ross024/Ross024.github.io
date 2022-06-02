@@ -1,4 +1,4 @@
-import { newsAppData as data} from "../data"
+import { vulcanAppData as data} from "../data"
 import { ExternalLink } from "react-external-link";
 
 
