@@ -105,7 +105,7 @@ export const consoleAppData =
     title: "Organizational Console",
     outputImg: "assets/c-organization-console.png",
     codeImg: "assets/console-code.png",
-    desc: "I created a UI for a hypothetical organization where you can add empoloyees into an SQL database, and look up the details of those employers and employees.",
+    desc: "I created a UI for a hypothetical organization where you can add employees into an SQL database, and look up the details of those employers and employees.",
     tech: "C#, Microsoft SQL Server",
     fillerImg: "assets/pretty-valley.jpg"
 }
